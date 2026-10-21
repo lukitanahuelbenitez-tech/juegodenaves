@@ -1,0 +1,13 @@
+# Archivos ejecutables compilados
+*.exe
+*.out
+*.o
+
+*.tmp
+*.log
+
+.vscode/
+.idea/
+
+Thumbs.db
+.DS_Store
