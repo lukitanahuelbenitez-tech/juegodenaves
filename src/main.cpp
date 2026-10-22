@@ -134,6 +134,7 @@ public:
 // ====================================================================
 
 int main() {
+    int score = 0;
     srand(time(NULL));
 
     // SISTEMA ANTI-COPIA: Petición de datos
@@ -164,6 +165,8 @@ int main() {
 
         gotoxy(2, 2); cout << "VIDAS: " << jugador.getVidas() << " ";
 
+        gotoxy(15, 2); cout << "SCORE: " << score << " ";
+
         if (_kbhit()) {
             char tecla = tolower(_getch()); // tolower evita el problema del Bloq Mayús
             if (tecla == ' ') {
@@ -183,6 +186,8 @@ int main() {
 
                 delete balas[i];
                 balas.erase(balas.begin() + i);
+                score += 10;
+                asteroides[i]->borrar();
             }
         }
 
