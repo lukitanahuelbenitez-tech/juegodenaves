@@ -1,0 +1,17 @@
+# Normalizar finales de linea
+* text=auto
+
+# Archivos de codigo fuente
+*.cpp text eol=lf
+*.h text eol=lf
+*.hpp text eol=lf
+
+# Documentacion
+*.md text eol=lf
+*.txt text eol=lf
+
+# Archivos PDF e imagenes
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
